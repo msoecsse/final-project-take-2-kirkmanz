@@ -20,5 +20,18 @@ public class Main extends Application {
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
+        HouseController mainController = mainLoader.getController();
+
+        FXMLLoader loaderTwo = new FXMLLoader();
+        loaderTwo.setLocation(getClass().getResource("editor.fxml"));
+        Parent secondRoot = loaderTwo.load();
+        HouseEditorController editorController = loaderTwo.getController();
+        Stage stageTwo = new Stage();
+        stageTwo.setTitle("House Editor");
+        stageTwo.setScene(new Scene(secondRoot));
+        stageTwo.hide();
+
+        mainController.setOtherStage(stageTwo);
+        mainController.setOtherController(editorController);
     }
 }
