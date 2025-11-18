@@ -13,10 +13,10 @@ public class HouseController {
 
     @FXML
     public void initialize(){
-        houseEditButton.setOnAction(_ -> openSettings());
+        houseEditButton.setOnAction(_ -> openEditor());
     }
 
-    private void openSettings(){
+    private void openEditor(){
         if (otherStage.isShowing()) {
             otherStage.hide();
         } else {

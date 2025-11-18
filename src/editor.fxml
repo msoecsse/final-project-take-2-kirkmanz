@@ -11,18 +11,18 @@
            <ToggleGroup fx:id="bedroomToggleGroup" />
            <ToggleGroup fx:id="bathroomToggleGroup" />
        </fx:define>
-      <RadioButton layoutX="7.0" layoutY="25.0" mnemonicParsing="false" text="1 bedroom" toggleGroup="$bedroomToggleGroup"> </RadioButton>
-      <RadioButton layoutX="7.0" layoutY="45.0" mnemonicParsing="false" text="2 bedrooms" toggleGroup="$bedroomToggleGroup" />
+      <RadioButton layoutX="7.0" layoutY="25.0" mnemonicParsing="false" text="1 bedroom" toggleGroup="$bedroomToggleGroup" userData="1"> </RadioButton>
+      <RadioButton layoutX="7.0" layoutY="45.0" mnemonicParsing="false" text="2 bedrooms" toggleGroup="$bedroomToggleGroup" userData="2"/>
       <Label layoutX="7.0" layoutY="5.0" text="Choose your number of bedrooms!" fx:id="test"/>
-      <RadioButton layoutX="7.0" layoutY="65.0" mnemonicParsing="false" text="3 bedrooms" toggleGroup="$bedroomToggleGroup" />
-      <RadioButton layoutX="7.0" layoutY="85.0" mnemonicParsing="false" text="4 bedrooms" toggleGroup="$bedroomToggleGroup" />
-      <RadioButton layoutX="7.0" layoutY="105.0" mnemonicParsing="false" text="5 bedrooms" toggleGroup="$bedroomToggleGroup" />
+      <RadioButton layoutX="7.0" layoutY="65.0" mnemonicParsing="false" text="3 bedrooms" toggleGroup="$bedroomToggleGroup" userData="3"/>
+      <RadioButton layoutX="7.0" layoutY="85.0" mnemonicParsing="false" text="4 bedrooms" toggleGroup="$bedroomToggleGroup" userData="4"/>
+      <RadioButton layoutX="7.0" layoutY="105.0" mnemonicParsing="false" text="5 bedrooms" toggleGroup="$bedroomToggleGroup" userData="5"/>
       <CheckBox fx:id="poolChecked" layoutX="269.0" layoutY="268.0" mnemonicParsing="false" />
       <CheckBox fx:id="garageChecked" layoutX="120.0" layoutY="268.0" mnemonicParsing="false" />
       <Label layoutX="177.0" layoutY="268.0" text="Include a Pool?" />
       <Label layoutX="14.0" layoutY="268.0" text="Include a Garage?" />
       <Label layoutX="5.0" layoutY="141.0" text="Choose your number of bathrooms!" />
-      <RadioButton layoutX="7.0" layoutY="160.0" mnemonicParsing="false" text="1 bathroom" toggleGroup="$bathroomToggleGroup"> </RadioButton>
-      <RadioButton layoutX="7.0" layoutY="180.0" mnemonicParsing="false" text="2 bathrooms" toggleGroup="$bathroomToggleGroup" />
-      <RadioButton layoutX="7.0" layoutY="200.0" mnemonicParsing="false" text="3 bathrooms" toggleGroup="$bathroomToggleGroup" />
+      <RadioButton layoutX="7.0" layoutY="160.0" mnemonicParsing="false" text="1 bathroom" toggleGroup="$bathroomToggleGroup" userData="1"> </RadioButton>
+      <RadioButton layoutX="7.0" layoutY="180.0" mnemonicParsing="false" text="2 bathrooms" toggleGroup="$bathroomToggleGroup" userData="2"/>
+      <RadioButton layoutX="7.0" layoutY="200.0" mnemonicParsing="false" text="3 bathrooms" toggleGroup="$bathroomToggleGroup" userData="3"/>
 </AnchorPane>
