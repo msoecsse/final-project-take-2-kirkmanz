@@ -1,7 +1,7 @@
 //Concrete Builder
 
 public class HouseBuilder implements Builder{
-    private House house = new House();
+    private final House house = new House();
 
     @Override
     public void buildBedrooms(int bedrooms) {

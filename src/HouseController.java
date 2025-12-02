@@ -7,7 +7,7 @@ import javafx.stage.Stage;
  */
 public class HouseController {
     private Stage otherStage;
-    private HouseEditorController otherController;
+
     @FXML
     Button houseEditButton;
 
@@ -28,7 +28,4 @@ public class HouseController {
         this.otherStage = stageTwo;
     }
 
-    public void setOtherController(HouseEditorController editorController) {
-        this.otherController = editorController;
-    }
 }

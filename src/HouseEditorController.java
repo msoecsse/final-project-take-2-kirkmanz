@@ -4,11 +4,11 @@ import javafx.scene.control.Label;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.ToggleGroup;
 
-public class HouseEditorController {
-    int numberOfBedrooms;
-    int numberOfBathrooms;
-    boolean includePool = false;
-    boolean includeGarage = false;
+public class HouseEditorController extends HouseBuilder{
+    private int numberOfBedrooms;
+    private int numberOfBathrooms;
+    private boolean includePool = false;
+    private boolean includeGarage = false;
     @FXML
     public CheckBox poolChecked;
     @FXML
@@ -42,6 +42,9 @@ public class HouseEditorController {
 
         garageChecked.selectedProperty().addListener((_, _, _) -> includeGarage= garageChecked.isSelected());
 
-
+        buildBedrooms(numberOfBedrooms);
+        buildBathrooms(numberOfBathrooms);
+        buildPool(includePool);
+        buildGarage(includeGarage);
     }
 }
