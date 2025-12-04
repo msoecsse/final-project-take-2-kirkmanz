@@ -23,6 +23,11 @@ public class HouseEditorController extends HouseBuilder{
 
     @FXML
     public void initialize() {
+
+    }
+
+    @FXML
+    public void enterPressed(){
         bedroomToggleGroup.selectedToggleProperty().addListener((_, _, newVal) -> {
             if (newVal != null) {
                 RadioButton selectedRadioButton = (RadioButton) newVal;
