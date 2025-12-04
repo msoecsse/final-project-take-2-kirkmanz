@@ -57,7 +57,7 @@ public class HouseEditorController extends HouseBuilder{
         HouseDirector houseDirector = new HouseDirector();
         houseDirector.construct(this, numberOfBedrooms, numberOfBathrooms, includeGarage, includePool);
         house = getResult();
-
+        houseController.displayHouse(house);
     }
 
     public House getHouse(){

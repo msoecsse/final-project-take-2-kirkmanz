@@ -12,43 +12,43 @@
       <ImageView fitHeight="357.0" fitWidth="287.0" layoutX="147.0" layoutY="178.0" pickOnBounds="true" preserveRatio="true">
          <Image url="@images/MainRoom.png" />
       </ImageView>
-      <ImageView fitHeight="179.0" fitWidth="265.0" layoutX="8.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="bedroom1" fitHeight="179.0" fitWidth="265.0" layoutX="8.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
          <Image url="@images/Bedroom1.png" />
       </ImageView>
-      <ImageView fitHeight="183.0" fitWidth="102.0" layoutX="273.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="bathroom1" fitHeight="183.0" fitWidth="102.0" layoutX="273.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
          <Image url="@images/Bathroom1.png" />
       </ImageView>
-      <ImageView fitHeight="172.0" fitWidth="139.0" layoutX="375.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="bedroom2" fitHeight="172.0" fitWidth="139.0" layoutX="375.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
          <Image url="@images/Bedroom2.png" />
       </ImageView>
-      <ImageView fitHeight="171.0" fitWidth="93.0" layoutX="507.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="bathroom2" fitHeight="171.0" fitWidth="93.0" layoutX="507.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
          <Image url="@images/Bathroom2.png" />
       </ImageView>
-      <ImageView fitHeight="196.0" fitWidth="171.0" layoutX="428.0" layoutY="173.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="bedroom3" fitHeight="196.0" fitWidth="171.0" layoutX="428.0" layoutY="173.0" pickOnBounds="true" preserveRatio="true">
          <Image url="@images/Bedroom3.png" />
       </ImageView>
-      <ImageView fitHeight="70.0" fitWidth="102.0" layoutX="428.0" layoutY="306.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="bathroom3" fitHeight="70.0" fitWidth="102.0" layoutX="428.0" layoutY="306.0" pickOnBounds="true" preserveRatio="true">
          <Image url="@images/Bathroom3.png" />
       </ImageView>
-      <ImageView fitHeight="216.0" fitWidth="171.0" layoutX="428.0" layoutY="369.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="bedroom4" fitHeight="216.0" fitWidth="171.0" layoutX="428.0" layoutY="369.0" pickOnBounds="true" preserveRatio="true">
          <Image url="@images/Bedroom4.png" />
       </ImageView>
-      <ImageView fitHeight="71.0" fitWidth="123.0" layoutX="475.0" layoutY="363.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="bathroom4" fitHeight="71.0" fitWidth="123.0" layoutX="475.0" layoutY="363.0" pickOnBounds="true" preserveRatio="true">
          <Image url="@images/Bathroom4.png" />
       </ImageView>
-      <ImageView fitHeight="212.0" fitWidth="237.0" layoutX="190.0" layoutY="524.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="garage" fitHeight="212.0" fitWidth="237.0" layoutX="190.0" layoutY="524.0" pickOnBounds="true" preserveRatio="true">
          <Image url="@images/Garage.png" />
       </ImageView>
-      <ImageView fitHeight="227.0" fitWidth="182.0" layoutX="8.0" layoutY="355.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="bedroom5" fitHeight="227.0" fitWidth="182.0" layoutX="8.0" layoutY="355.0" pickOnBounds="true" preserveRatio="true">
          <Image url="@images/Bedroom5.png" />
       </ImageView>
-      <ImageView fitHeight="73.0" fitWidth="131.0" layoutX="8.0" layoutY="348.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="bathroom5" fitHeight="73.0" fitWidth="131.0" layoutX="8.0" layoutY="348.0" pickOnBounds="true" preserveRatio="true">
          <Image url="@images/Bathroom5.png" />
       </ImageView>
       <ImageView fitHeight="191.0" fitWidth="152.0" layoutX="8.0" layoutY="157.0" pickOnBounds="true" preserveRatio="true">
          <Image url="@images/FillerRoom.png" />
       </ImageView>
-      <ImageView fitHeight="262.0" fitWidth="317.0" layoutX="594.0" layoutY="202.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+      <ImageView fx:id="pool" fitHeight="262.0" fitWidth="317.0" layoutX="594.0" layoutY="202.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
          <Image url="@images/Pool.png" />
       </ImageView>
       <Button fx:id="houseEditButton" alignment="BOTTOM_RIGHT" layoutX="714.0" layoutY="693.0" mnemonicParsing="false" text="Click here to edit your house!" />
