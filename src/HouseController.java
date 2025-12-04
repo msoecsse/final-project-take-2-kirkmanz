@@ -11,8 +11,6 @@ import java.util.ArrayList;
  */
 public class HouseController {
     private Stage otherStage;
-
-
     @FXML
     Button houseEditButton;
     @FXML
@@ -42,7 +40,6 @@ public class HouseController {
 
     private ArrayList<ImageView> bedrooms = new ArrayList<>();
     private ArrayList<ImageView> bathrooms = new ArrayList<>();
-
 
 
     @FXML

@@ -25,11 +25,6 @@ public class HouseEditorController extends HouseBuilder{
 
     @FXML
     public void initialize() {
-
-    }
-
-    @FXML
-    public void enterPressed(){
         bedroomToggleGroup.selectedToggleProperty().addListener((_, _, newVal) -> {
             if (newVal != null) {
                 RadioButton selectedRadioButton = (RadioButton) newVal;
@@ -49,7 +44,10 @@ public class HouseEditorController extends HouseBuilder{
         poolChecked.selectedProperty().addListener((_, _, _) -> includePool= poolChecked.isSelected());
 
         garageChecked.selectedProperty().addListener((_, _, _) -> includeGarage= garageChecked.isSelected());
+    }
 
+    @FXML
+    public void enterPressed(){
         buildHouse();
     }
 
