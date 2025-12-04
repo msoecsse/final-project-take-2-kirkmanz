@@ -8,6 +8,7 @@ import javafx.stage.Stage;
 public class HouseController {
     private Stage otherStage;
 
+
     @FXML
     Button houseEditButton;
 

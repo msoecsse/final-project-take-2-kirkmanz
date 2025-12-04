@@ -9,6 +9,7 @@ public class HouseEditorController extends HouseBuilder{
     private int numberOfBathrooms;
     private boolean includePool = false;
     private boolean includeGarage = false;
+    private House house;
     @FXML
     public CheckBox poolChecked;
     @FXML
@@ -42,9 +43,12 @@ public class HouseEditorController extends HouseBuilder{
 
         garageChecked.selectedProperty().addListener((_, _, _) -> includeGarage= garageChecked.isSelected());
 
-        buildBedrooms(numberOfBedrooms);
-        buildBathrooms(numberOfBathrooms);
-        buildPool(includePool);
-        buildGarage(includeGarage);
+        HouseDirector houseDirector = new HouseDirector();
+        houseDirector.construct(this, numberOfBedrooms, numberOfBathrooms, includeGarage, includePool);
+        house = getResult();
+    }
+
+    public House getHouse(){
+        return house;
     }
 }
