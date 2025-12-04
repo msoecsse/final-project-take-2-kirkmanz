@@ -32,5 +32,7 @@ public class Main extends Application {
         stageTwo.hide();
 
         mainController.setOtherStage(stageTwo);
+
+        editorController.setMainController(mainController);
     }
 }

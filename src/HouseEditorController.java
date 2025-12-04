@@ -21,6 +21,8 @@ public class HouseEditorController extends HouseBuilder{
     @FXML
     private ToggleGroup bathroomToggleGroup;
 
+    private HouseController houseController;
+
     @FXML
     public void initialize() {
 
@@ -48,12 +50,21 @@ public class HouseEditorController extends HouseBuilder{
 
         garageChecked.selectedProperty().addListener((_, _, _) -> includeGarage= garageChecked.isSelected());
 
+        buildHouse();
+    }
+
+    private void buildHouse() {
         HouseDirector houseDirector = new HouseDirector();
         houseDirector.construct(this, numberOfBedrooms, numberOfBathrooms, includeGarage, includePool);
         house = getResult();
+
     }
 
     public House getHouse(){
         return house;
+    }
+
+    public void setMainController(HouseController controller){
+        houseController = controller;
     }
 }

@@ -29,4 +29,8 @@ public class HouseController {
         this.otherStage = stageTwo;
     }
 
+    public void displayHouse(){
+
+    }
+
 }
