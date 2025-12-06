@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HouseController">
+<AnchorPane fx:id="mainGrid" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HouseController">
    <children>
       <VBox layoutX="618.0" layoutY="563.0" prefHeight="37.0" prefWidth="182.0" />
       <ImageView fitHeight="357.0" fitWidth="287.0" layoutX="147.0" layoutY="178.0" pickOnBounds="true" preserveRatio="true">
