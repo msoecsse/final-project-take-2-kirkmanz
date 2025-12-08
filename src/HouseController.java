@@ -38,8 +38,8 @@ public class HouseController {
     @FXML
     ImageView garage;
 
-    private ArrayList<ImageView> bedrooms = new ArrayList<>();
-    private ArrayList<ImageView> bathrooms = new ArrayList<>();
+    private final ArrayList<ImageView> bedrooms = new ArrayList<>();
+    private final ArrayList<ImageView> bathrooms = new ArrayList<>();
 
 
     @FXML
