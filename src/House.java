@@ -1,16 +1,16 @@
 //Product: complex object
 public class House {
-    private int numbedRooms;
+    private int numBedrooms;
     private int numBathrooms;
     private boolean hasPool;
     private boolean hasGarage;
 
     public void setBedrooms(int numberRooms) {
-        numbedRooms = numberRooms;
+        numBedrooms = numberRooms;
     }
 
     public int getBedrooms() {
-        return numbedRooms;
+        return numBedrooms;
     }
 
     public void setBathrooms(int numRooms) {
@@ -39,7 +39,7 @@ public class House {
 
     public void displayInfo() {
         System.out.println("House Plan:"
-                + "\nBedrooms: " + numbedRooms
+                + "\nBedrooms: " + numBedrooms
                 + "\nBathrooms: " + numBathrooms
                 + "\nPool: " + hasPool
                 + "\nGarage: " + hasGarage
