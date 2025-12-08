@@ -1,3 +1,4 @@
+import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.Label;
@@ -9,6 +10,7 @@ public class HouseEditorController extends HouseBuilder{
     private int numberOfBathrooms;
     private boolean includePool = false;
     private boolean includeGarage = false;
+    private House house;
     @FXML
     public CheckBox poolChecked;
     @FXML
@@ -47,15 +49,20 @@ public class HouseEditorController extends HouseBuilder{
 
     @FXML
     public void enterPressed(){
+        numberOfBedrooms = Integer.parseInt((String) bedroomToggleGroup.getSelectedToggle().getUserData());
+        numberOfBathrooms = Integer.parseInt((String) bathroomToggleGroup.getSelectedToggle().getUserData());
+        includePool = poolChecked.isSelected();
+        includeGarage = garageChecked.isSelected();
         buildHouse();
     }
 
     private void buildHouse() {
         HouseDirector houseDirector = new HouseDirector();
         houseDirector.construct(this, numberOfBedrooms, numberOfBathrooms, includeGarage, includePool);
-        House house = getResult();
+        house = getResult();
         houseController.displayHouse(house);
     }
+
 
     public void setMainController(HouseController controller){
         houseController = controller;

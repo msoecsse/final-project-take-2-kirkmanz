@@ -1,6 +1,7 @@
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 import java.util.ArrayList;
@@ -11,6 +12,8 @@ import java.util.ArrayList;
  */
 public class HouseController {
     private Stage otherStage;
+    @FXML
+    AnchorPane mainGrid;
     @FXML
     Button houseEditButton;
     @FXML
@@ -72,8 +75,13 @@ public class HouseController {
     private void openEditor(){
         if (otherStage.isShowing()) {
             otherStage.hide();
+            houseEditButton.setText("Click here to edit your house!");
         } else {
+            Stage thisStage = (Stage)mainGrid.getScene().getWindow();
+            otherStage.setX(thisStage.getX() + 3 * thisStage.getWidth() / 4);
+            otherStage.setY(thisStage.getY() / 2);
             otherStage.show();
+            houseEditButton.setText("Click here to close editor");
         }
     }
 
@@ -82,6 +90,7 @@ public class HouseController {
     }
 
     public void displayHouse(House house){
+        initialize();
         for(int i = 0; i < house.getBedrooms(); i++){
             bedrooms.get(i).setVisible(true);
         }
