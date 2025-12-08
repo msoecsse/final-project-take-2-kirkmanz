@@ -16,7 +16,6 @@
            <ToggleGroup fx:id="bathroomToggleGroup" />
        </fx:define>
    <VBox alignment="TOP_CENTER" layoutX="5.0" layoutY="5.0" prefHeight="322.0" prefWidth="273.0">
-      <children>
             <Label fx:id="test" text="Choose your number of bedrooms!" />
             <RadioButton mnemonicParsing="false" text="1 bedroom" toggleGroup="$bedroomToggleGroup" userData="1"/>
             <RadioButton mnemonicParsing="false" text="2 bedrooms" toggleGroup="$bedroomToggleGroup" userData="2" />
@@ -30,7 +29,6 @@
             <RadioButton mnemonicParsing="false" text="4 bathrooms" toggleGroup="$bathroomToggleGroup" userData="4"/>
             <RadioButton mnemonicParsing="false" text="5 bathrooms" toggleGroup="$bathroomToggleGroup" userData="5"/>
          <HBox>
-            <children>
                   <CheckBox fx:id="poolChecked" mnemonicParsing="false" />
                   <Label text="Include a Pool?">
                   <padding>
@@ -43,16 +41,12 @@
                      <Insets left="10.0" right="10.0" />
                   </padding>
                </Label>
-            </children>
             <padding>
                <Insets bottom="10.0" top="10.0" />
             </padding>
          </HBox>
          <HBox>
-            <children>
                <Button mnemonicParsing="false" onAction="#enterPressed" text="Enter" />
-            </children>
          </HBox>
-      </children>
    </VBox>
 </AnchorPane>
